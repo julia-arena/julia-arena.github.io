@@ -344,7 +344,7 @@
 					function (clickfeature, layer) {
 						return clickfeature;
 					});
-
+                content_element.innerHTML = "Subscription-Plans changed. <br> Currency-Rates cannot be accessed.";
 				//console.log(clickfeature);
 				if (clickfeature) {
 					var geometry = clickfeature.getGeometry();
@@ -391,9 +391,6 @@
 						}
 					}).responseText;
 
-                    if (content_element.length == 0){
-                        content_element.innerHTML = "Subscription-Plans changed. <br> Currency-Rates cannot be accessed.";
-                    }
                     
 					
 					//if checkbox checked, also values from past month requested and min / max calculated
