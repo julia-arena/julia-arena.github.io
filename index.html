@@ -343,8 +343,7 @@
 					function (clickfeature, layer) {
 						return clickfeature;
 					});
-                content_element.innerHTML = "Subscription-Plans changed. <br> Currency-Rates cannot be accessed.";
-				//console.log(clickfeature);
+                content_element.innerHTML = "Subscription-Plans changed. <br> Currency-Rates cannot be accessed.<br> Raw-Code available at <a href='https://github.com/julia-arena/julia-arena.github.io'>GitHUB</a>";
 				if (clickfeature) {
 					var geometry = clickfeature.getGeometry();
 					var coord = e.coordinate;
@@ -388,7 +387,7 @@
 							// recognise the content variable's content as HTML code
 							content_element.innerHTML = content;	
 						},
-                        error: content_element.innerHTML = "Subscription-Plans changed. <br> Currency-Rates cannot be accessed."
+                        error: content_element.innerHTML = "Subscription-Plans changed. <br> Currency-Rates cannot be accessed.<br> Raw-Code available at <a href='https://github.com/julia-arena/julia-arena.github.io'>GitHUB</a>"
 					}).responseText;
 
                     
