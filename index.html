@@ -390,7 +390,11 @@
 							content_element.innerHTML = content;	
 						}
 					}).responseText;
-
+                    
+                    if (content_element.length == 0){
+                        content_element.innerHTML = "Subscription-Plans changed. <br> Currency-Rates cannot be accessed.";
+                    }
+                    
 					
 					//if checkbox checked, also values from past month requested and min / max calculated
 					if (checkboxStatus == true) {
