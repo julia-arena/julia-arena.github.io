@@ -390,7 +390,7 @@
 							content_element.innerHTML = content;	
 						}
 					}).responseText;
-                    
+
                     if (content_element.length == 0){
                         content_element.innerHTML = "Subscription-Plans changed. <br> Currency-Rates cannot be accessed.";
                     }
@@ -445,7 +445,7 @@
 			var base_sel = document.getElementById("currency_base");
 
 			function gethistoricRates() {
-
+                console.log(wanted);
 				var dates = getDate();
 				var historic_json = [];
 				var hJSONarray = [];
